@@ -26,6 +26,7 @@ jobs:
         with:
           context: .
           push: true
+          tags: ${{ env.IMAGE_NAME }}:latest
         # 开启 GitHub Actions 缓存，大幅加快二次构建速度
           cache-from: type=gha
           cache-to: type=gha,mode=max
